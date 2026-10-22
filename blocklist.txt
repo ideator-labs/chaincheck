@@ -1,0 +1,11 @@
+# Intermediates rejected by Go 1.26.10 / Docker Engine 29.9.2 (CVE-2026-111943).
+# Source: https://docs.docker.com/engine/release-notes/29 (29.9.2, 2026-10-20)
+# One subject Common Name per line. Matching is by exact CN.
+EM DV TLS CA - G3B
+EM DV TLS CA - G3C
+EM OV TLS CA - G3B
+EM OV TLS CA - G3C
+EM EV TLS CA - G3B
+EM EV TLS CA - G3C
+EM OV CS CA - G3B
+EM OV CS CA - G3C

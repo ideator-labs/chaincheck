@@ -1,0 +1,10 @@
+name: ci
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: registry-bad.test:5443/ci/builder:3
+    steps:
+      - run: docker login registry-good.test:5444 -u ci --password-stdin < token
+      - run: docker push registry-bad.test:5443/team/api:${{ github.sha }}

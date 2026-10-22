@@ -1,0 +1,7 @@
+services:
+  api:
+    image: registry-good.test:5444/team/api:2.1
+  worker:
+    image: "registry-bad.test:5443/team/worker@sha256:0000000000000000000000000000000000000000000000000000000000000000"
+  cache:
+    image: redis:7

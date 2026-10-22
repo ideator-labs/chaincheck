@@ -1,0 +1,4 @@
+{
+  "name": "dev",
+  "image": "registry-good.test:5444/dev/base:1"
+}
